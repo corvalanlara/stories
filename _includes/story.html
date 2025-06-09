@@ -9,7 +9,7 @@
 		</amp-img>
 	</amp-story-grid-layer>
 	<amp-story-grid-layer template="horizontal">
-		<p style="writing-mode: vertical-lr; text-orientation: mixed; font-size: 0.7em;">{% endraw %}{{ image.modified_time | date: "%Y-%m-%d"}}{% raw %}</p>
+		<p style="writing-mode: vertical-lr; text-orientation: mixed; font-size: 0.7em;">{% endraw %}{{ image.path | remove_first: "/" | exif: 'date_time_original' | date: "%Y-%m-%d"}}{% raw %}</p>
 	</amp-story-grid-layer>
 </amp-story-page>
 {% endraw %}
