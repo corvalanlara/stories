@@ -1,0 +1,12 @@
+{% raw %}
+<amp-story-page id="{% endraw %}page{{ forloop.index }}{% raw %}">
+	<amp-story-grid-layer template="fill">
+{% endraw %}
+		<amp-video src="{{ image.path | absolute_url }}"
+{% raw %}
+		width="720" height="1280"
+		layout="responsive">
+		</amp-video>
+	</amp-story-grid-layer>
+</amp-story-page>
+{% endraw %}
